@@ -1,0 +1,32 @@
+{
+	"variables": [
+		"TestDatasetEmail",
+		"TestDatasetValidationResult"
+	],
+	"data": [
+		{
+			"TestDatasetEmail": "simple@example.com",
+			"TestDatasetValidationResult": "simple@example.com is valid"
+		},
+		{
+			"TestDatasetEmail": "very.common@example.com",
+			"TestDatasetValidationResult": "very.common@example.com is valid"
+		},
+		{
+			"TestDatasetEmail": "disposable.style.email.with+symbol@example.com",
+			"TestDatasetValidationResult": "disposable.style.email.with+symbol@example.com is valid"
+		},
+		{
+			"TestDatasetEmail": "Abc.example.com",
+			"TestDatasetValidationResult": "Abc.example.com is invalid"
+		},
+		{
+			"TestDatasetEmail": "A@b@c@example.com",
+			"TestDatasetValidationResult": "A@b@c@example.com is invalid"
+		},
+		{
+			"TestDatasetEmail": "a\"b(c)d,e:f;g<h>i[j\\k]l@example.com",
+			"TestDatasetValidationResult": "a\"b(c)d,e:f;gi[j\\k]l@example.com is invalid"
+		}
+	]
+}
